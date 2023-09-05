@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "chrome插件v3测试",
+  "version": "0.0.1",
+  "description": "一个测试v3插件",
+  "content_scripts": [{
+    "matches": ["https://tools.mgaia.top/*"],
+    "js": [
+      "content.js"
+      
+    ],
+    "css": [
+      "css/index.css"
+    ],
+    "run_at": "document_end",
+    "type": "module"
+  }],
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/*", "js/*"],
+      "matches": [ "https://tools.mgaia.top/*" ]
+    }
+  ]
+}

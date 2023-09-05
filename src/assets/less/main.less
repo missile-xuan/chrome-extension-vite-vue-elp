@@ -1,0 +1,52 @@
+
+.plug-drag-bar{
+  height: 30px;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  box-sizing: border-box;
+  align-items: center;
+  cursor: all-scroll;
+}
+.plug-close-win{
+  cursor: pointer;
+}
+.plug-frame-middle{
+  flex-grow: 1;
+  height: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.plug-frame-bottom{
+  height: 4px;
+  display: flex;
+  flex-direction: row;
+}
+
+.plug-body{
+  flex-grow: 1;
+}
+
+.plug-drag-width{
+  height: 100%;
+  width: 4px;
+  cursor: w-resize;
+}
+.plug-drag-height{
+  height: 100%;
+  flex-grow: 1;
+  cursor: n-resize;
+}
+.plug-drag-width-height{
+  width: 4px;
+  height: 100%;
+}
+
+.plug-thumbnail{
+  background-color: red;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+}
